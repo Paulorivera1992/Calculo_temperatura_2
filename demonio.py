@@ -19,7 +19,7 @@ class App():
       self.pidfile_timeout = 1
 
    def run(self):
-   #######################################  inicio del demonio  #########################################################
+   #######################################  inicio del demonio  ###########################################################
       estatus_c=False
       estatus_e=False
       nombre_archivo_imagen='/home/jetson/Calculo_temperatura2/imagenes_llama/Llama.tiff'

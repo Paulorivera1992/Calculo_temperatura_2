@@ -21,7 +21,7 @@ from skimage.transform import rescale
 from seabreeze.spectrometers import Spectrometer
 from seabreeze.spectrometers import SeaBreezeError
 
-################################################adquisicion de imagenes#################################################################
+################################################adquisicion de imagenes###################################################################
 
 def configurar(camara,t_exposicion,f_adquisicion,ganancia,p_ancho,p_alto,offset_x,offset_y):
   if(camara!=0):
