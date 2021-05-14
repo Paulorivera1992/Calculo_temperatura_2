@@ -22,14 +22,14 @@ class App():
    #######################################  inicio del demonio  #########################################################
       estatus_c=False
       estatus_e=False
-      nombre_archivo_imagen='/home/ubuntu/calculo_temperatura/imagenes_llama/Llama.tiff'
-      nombre_archivo_intensidad='/home/ubuntu/calculo_temperatura/espectro_llama/espectro.txt'
-      nombre_archivo_wavelengths='/home/ubuntu/calculo_temperatura/espectro_llama/wavelength.txt'
-      nombre_archivo_calibracion='/home/ubuntu/calculo_temperatura/espectro_llama/calib.txt'
-      nombre_archivo_configuracion='/home/ubuntu/calculo_temperatura/configuracion.txt'
-      nombre_archivo_buffet='/home/ubuntu/calculo_temperatura/archivos_buffet/Bufet.txt'
-      nombre_archivo_buffet_soot='/home/ubuntu/calculo_temperatura/archivos_buffet/Bufet_soot.txt'
-      nombre_archivo_buffet_tiempo='/home/ubuntu/calculo_temperatura/archivos_buffet/Bufet_tiempo.txt'
+      nombre_archivo_imagen='/home/jetson/Calculo_temperatura2/imagenes_llama/Llama.tiff'
+      nombre_archivo_intensidad='/home/jetson/Calculo_temperatura2/espectro_llama/espectro.txt'
+      nombre_archivo_wavelengths='/home/jetson/Calculo_temperatura2/espectro_llama/wavelength.txt'
+      nombre_archivo_calibracion='/home/jetson/Calculo_temperatura2/espectro_llama/calib.txt'
+      nombre_archivo_configuracion='/home/jetson/Calculo_temperatura2/configuracion.txt'
+      nombre_archivo_buffet='/home/jetson/Calculo_temperatura2/archivos_buffet/Bufet.txt'
+      nombre_archivo_buffet_soot='/home/jetson/Calculo_temperatura2/archivos_buffet/Bufet_soot.txt'
+      nombre_archivo_buffet_tiempo='/home/jetson/Calculo_temperatura2/archivos_buffet/Bufet_tiempo.txt'
       
    #######################################  Creacion de archivos de buffet  ############################################
       Funciones.crear_archivos_de_datos(nombre_archivo_buffet)
@@ -109,7 +109,7 @@ if __name__ == '__main__':
    logger = logging.getLogger("TFlog")
    logger.setLevel(logging.DEBUG)
    formatter = logging.Formatter("%(levelname)s:%(asctime)s - %(message)s")
-   handler = logging.FileHandler("/home/ubuntu/calculo_temperatura/TF.log")
+   handler = logging.FileHandler("/home/jetson/Calculo_temperatura2/TF.log")
    handler = logging.handlers.RotatingFileHandler(filename='TF.log', mode='a', maxBytes=10000000, backupCount=1)
    handler.setFormatter(formatter)
    logger.addHandler(handler)

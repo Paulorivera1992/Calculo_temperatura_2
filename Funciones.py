@@ -125,7 +125,7 @@ def obtener_espectro(spec,ruta_intensidad,ruta_longitud,t_integracion,logger):
 
 def algoritmos_radg_TF(ruta_img,ruta_intensidad,ruta_longitud,ruta_calibracion,ruta_buffet,logger):
   try:
-    completed = subprocess.run(['./calculo_Tf',ruta_img,ruta_intensidad,ruta_longitud,ruta_calibracion,ruta_buffet], check=True, cwd="/home/ubuntu/calculo_temperatura/") 
+    completed = subprocess.run(['./calculo_Tf',ruta_img,ruta_intensidad,ruta_longitud,ruta_calibracion,ruta_buffet], check=True, cwd="/home/jetson/Calculo_temperatura2/") 
   except subprocess.CalledProcessError as err:
       logger.error('Error en la ejecucion del algoritmo:', err)
       
